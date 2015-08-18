@@ -1,0 +1,32 @@
+<span class="label">Ordered By: {{orderByField}}, Reverse Sort: {{reverseSort}}</span><br><br>
+<table  id="sunset-sunrise" class="table table-striped table-hover" ng-table>
+    <tr >
+        <td colspan="4">
+            <h3 ng-show="response.solar"> Sunset and Sunrise Times</h3>
+            <p ng-show="response.geo.formattedAddress"> {{ response.geo.formattedAddress }}, for coordinates lat: {{ response.geo.lat }} long:  {{ response.geo.lng }}</p>
+            <p> {{ displayCount }} results</p>
+            <p ng-show="maxReached">Maximum rached for this query!</p>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <a href="#" ng-click="orderByField='date'; reverseSort = !reverseSort">
+                Date<span ng-show="orderByField == 'date'">
+                <span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+            </a>
+        </th>
+        <th>
+            Sunrise time
+        </th>
+        <th>Sunset time</th>
+        <th>Length of day</th>
+    </tr>
+    <tbody>
+        <tr ng-repeat="row  in response.solar | orderBy:orderByField:reverseSort" class="animate-repeat table-striped" ng-click="openDetails($index)" >
+            <td >{{row.date }}</td>
+            <td >{{row.sunrise }}</td>
+            <td >{{row.sunset }}</td>
+            <td >{{row.day_length }} Hrs.</td>
+        </tr> <!--(key, value) in myObj -->
+    </tbody>
+</table>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:2403/" />
+<title>default</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">default</td></tr>
+</thead><tbody>
+<!---->
+<!-------------------------------------------------->
+<!--BEGIN quick-date-range duplicate ------------>
+<!--DONT EDIT ANYTHING IN THIS BRACKET ---->
+<!--instad just COPY IT FRTOM that test ---------->
+<!-------------------------------------------------->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=td</td>
+	<td></td>
+</tr>
+<!---->
+<!--@author - Brian Lamb-->
+<!--@todo - -->
+<!--@ticket - -->
+<!--@url --->
+<!---->
+<!--Load Page-->
+<tr>
+	<td>open</td>
+	<td>${myEnvironment}/</td>
+	<td></td>
+</tr>
+<!---->
+<!--Verify Page Loaded-->
+<tr>
+	<td>waitForVisible</td>
+	<td>css=button.btn.btn-success</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>assertValue</td>
+	<td>id=dateToEnd</td>
+	<td>*</td>
+</tr>
+<!---->
+<!--Run it-->
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-success</td>
+	<td></td>
+</tr>
+<!---->
+<!--Wait for Results Element-->
+<!--Verify Sunrise Sunset Row Data-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//table[@id='sunset-sunrise']/tbody/tr[4]/td</td>
+	<td></td>
+</tr>
+<!-------------------------------------->
+<!--END quick-date-range dupliate-->
+<!-------------------------------------->
+<!---->
+<!--Run the details tests now-->
+<tr>
+	<td>click</td>
+	<td>//table[@id='sunset-sunrise']/tbody/tr[4]/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//table[@id='solar-detail']/tbody/tr[2]/th</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//table[@id='solar-detail']/tbody/tr[2]/th</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=solar-detail.2.0</td>
+	<td>Sunrise</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//table[@id='solar-detail']/tbody/tr[5]/th</td>
+	<td></td>
+</tr>
+<!--SUCCESS-->
+</tbody></table>
+</body>
+</html>

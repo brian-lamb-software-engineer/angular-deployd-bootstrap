@@ -1,0 +1,53 @@
+{
+	"type": "Collection",
+	"properties": {
+		"codeName": {
+			"name": "codeName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "codeName",
+			"order": 0
+		},
+		"uri": {
+			"name": "uri",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "uri",
+			"order": 1
+		},
+		"urlParams": {
+			"name": "urlParams",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "urlParams",
+			"order": 2
+		},
+		"queryParams": {
+			"name": "queryParams",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "queryParams",
+			"order": 3
+		},
+		"description": {
+			"name": "description",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "description",
+			"order": 4
+		},
+		"testData": {
+			"name": "testData",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "testData",
+			"order": 5
+		}
+	}
+}

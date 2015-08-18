@@ -1,0 +1,44 @@
+
+/*http://angular-ui.github.io/bootstrap/*/
+nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+body{
+
+    background-color:  #f9f9f9
+}
+
+.spacer {
+
+    margin-top: 20px; /* define margin as you see fit */
+    overflow: hidden;
+}
+
+.form-horizontal .control-label{
+
+    padding-top: 15px;
+    text-alight: right;
+    margin-bottom: 7px;
+    clear:left;
+}
+
+.form-horizontal .btn-success{
+
+    margin-top: 5px;
+}
+
+
+#sunset-sunrise{
+
+    display:none;
+}
+
+
+#solar-detail{
+
+    display:none;
+}
+
+#spinner{
+
+    display:none;
+}

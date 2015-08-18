@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# be careful to only run this on your own user account
+PUBLIC_HTML_DIR="/home/wolfdogg/sites/js_codechallenge"
+find $PUBLIC_HTML_DIR/* -type d -exec chmod 701 {} \;
+find $PUBLIC_HTML_DIR/* -type f -exec chmod 777 {} \;
+find $PUBLIC_HTML_DIR/* -type d -name cgi-bin -exec chmod 777 {} \;

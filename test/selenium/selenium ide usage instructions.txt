@@ -1,0 +1,22 @@
+
+These tests use selenium ide, do a google on that to find it, then install it as a firefox plugin. 
+ 
+Usage:
+
+-Open selenium ide after you have firefox opened.  
+
+-Using selenium ide, File->Open the test suite (i usually give them a .ste extension, its main.ste here currently, subject to change), 
+
+-Once the suite is opened, double click the first test to load the environment, press play
+
+-double click a test to pull some results, press play. verify Green..
+
+
+If you want to run a full suite automated test, right click on the first storeenv test, and use the option to "Play test suite from here"..   You would need to ensure no unecessary tests fall below the starting point before doing this, or you will get unecessary failures and time wasted.  Move ones you dont want to the top, above the starting test. 
+
+Alternatively, you can delete any uneneeded tests, which should ALWAYS reside on the top of the list by standard(if not put them there first, save your test suite), then leaving only the envrionment set and wanted application tests, click play all.  
+
+Once results are finished,
+Look for red.  Open the red tests by douvble clicking on them, then replay, to see where the hangup is, then determine if the problems are due to selenium nature where you might need to fine tune test to latest development, or its shedding light on an application nature.
+
+Fine tune your failing tests accordingly if the former, fix your app if the latter.

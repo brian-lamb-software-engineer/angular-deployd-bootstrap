@@ -1,0 +1,29 @@
+{
+	"type": "Collection",
+	"properties": {
+		"streetAddress": {
+			"name": "streetAddress",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "streetAddress",
+			"order": 0
+		},
+		"zip": {
+			"name": "zip",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "zip",
+			"order": 1
+		},
+		"region": {
+			"name": "region",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "region",
+			"order": 2
+		}
+	}
+}

@@ -1,0 +1,57 @@
+<!--@ todo paginate rows-->
+<form id="location-form"  class="form-horizontal" >
+    <div class="form-element">
+        <label class="col-sm-3 control-label" for="locationQuery">Address:</label>
+        <div class="col-sm-9">
+            <input type="text" ng-model="locationQuery" id="locationQuery" class="form-control ng-valid ng-dirty ng-valid-parse  active" name="locationQuery" placeholder="Sydney, AU" />
+        </div>
+    </div>
+    <div class="form-element" >
+        <label class="col-sm-3 control-label" for="dateToStart">Start Date: </label>
+        <div class="col-sm-9">
+            <p class="input-group">
+                <input type="date"
+                           id="dateToStart"
+                           name="dateToStart"
+                            class="form-control"
+                            datepicker-popup ng-model="dateToStart"
+                            is-open="statusStart.opened"
+                            datepicker-options="dateOptions"
+                            ng-required="true"
+                            close-text="Close"  />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="openStartDate($event)"><i class="fa fa-calendar fa-1x"></i></button>
+              </span>
+            </p>
+        </div>
+    </div>
+    <div class="form-element" >
+        <label class="col-sm-3 control-label" for="dateToEnd">End Date: </label>
+        <div class="col-sm-9">
+            <p class="input-group">
+                <input type="date"
+                           id="dateToEnd"
+                           name="dateToEnd"
+                            class="form-control"
+                            datepicker-popup
+                           ng-model="dateToEnd"
+                            is-open="statusEnd.opened"
+                            datepicker-options="dateOptions"
+                            date-disabled="disabled(date, mode)"
+                            ng-required="true"
+                            close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="openEndDate($event)"><i class="fa fa-calendar fa-1x"></i></button>
+              </span>
+            </p>
+        </div>
+    </div>
+    <div class="form-element">
+        <div class="col-sm-3">
+            </div>
+        <div class="col-sm-9">
+            <button type="submit" class="btn btn-success" ng-click="submit()">Convert</button>
+            <img id="spinner" ng-src="/images/spiffygif_30x30.gif" >
+        </div>
+    </div>
+</form>
