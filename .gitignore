@@ -1,0 +1,7 @@
+#.gitignore
+readme
+/app/data
+/app/.dpd
+/dep
+*.zip
+
