@@ -18,7 +18,8 @@ for consumption.
 
 ## Application Setup Instructions
 
-No server needed, use deployd
+No application server needed, use deployd.
+Database server needed, have a running instance of mongodb already installed.
 
 ### References 
 * Deployd docs http://docs.deployd.com/docs/server/your-server.html
@@ -59,10 +60,15 @@ http://localhost:2043
 
 * If you get a  mongo error, which states to use --mongo, normally that command is as follows
   ```bash
-dpd -d --mongod ./pids
- ```
+  touch ./pids
+  chmod 0777 ./pids
+  dpd -d --mongod ./pids
+  ```
 
- 
+* If you still get the mongo error, 
+  ```bash
+  chmod -R 0777 your_entire_app_dir
+ ``` 
  
 ## Integration testing
 
