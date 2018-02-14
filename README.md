@@ -34,7 +34,7 @@ No server needed, use deployd
   
 
  ```bash
- # sudo npm install -g deployd
+ # npm install -g deployd
  ```
  
 * If your using linux (which has a desktop, and a browser)  to launch deployd
