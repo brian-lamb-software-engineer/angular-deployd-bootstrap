@@ -34,13 +34,13 @@ No server needed, use deployd
   
 
  ```bash
- # npm install -g deployd
+ # npm install -g deployd-cli
  ```
  
 * If your using linux (which has a desktop, and a browser)  to launch deployd
 
+switch to the root directory of the app, then run it via deployd
  ```bash
-$ cd /home/user/sites/ast_deployd
 $ dpd -d //if your using linux to launch deployd
  ```
 
@@ -48,7 +48,7 @@ $ dpd -d //if your using linux to launch deployd
  
   ```bash
 -  open cmd as administrator
-- > cd sites/ast_deployd
+- > cd yourapproot
 -> dpd -d
  ```
  
