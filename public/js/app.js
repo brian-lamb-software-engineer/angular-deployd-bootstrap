@@ -5,6 +5,19 @@ var app = angular.module('app', ['dpd', 'ngResource',  'ui.bootstrap'] )
         useSocketIo: true,
         noCache: false
     })
+    //need ngSanitize loaded for this to work
+    // .config(function($sceDelegateProvider) {
+    //   $sceDelegateProvider.resourceUrlWhitelist([
+    //     // Allow same origin resource loads.
+    //     '*',
+    //     'self',
+    //     // Allow loading from outer templates domain.
+    //     // 'http://cdn.somewebsite.com/templates/**'
+    //     'http://sunrise-sunset.org/api',
+    //     'https://developers.google.com/maps/documentation/geocoding/#geocoding',
+    //     'https://msdn.microsoft.com/en-us/library/ff701714.aspx',
+    //   ])
+    // })
     .controller('astController', ['$scope', 'dpd', '$q', '$http', 'geo', 'ss',  function($scope, dpd, $q,  $http, geo, ss){
 
         var maxAllowedResults = +28; //cant be less than oneWeek
